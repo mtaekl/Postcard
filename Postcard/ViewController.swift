@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func wgButtonPressed_Send_Mail(sender: UIButton) {
+        //Commenting to test commits
         wgLabel_Message.hidden = false
         wgLabel_Message.text = wgTextField_Enter_Message.text
         wgLabel_Message.textColor = UIColor.blueColor()
