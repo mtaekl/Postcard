@@ -94,13 +94,22 @@
                                     <action selector="wgButtonPressed_Send_Mail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOp-nS-DPd"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvM-XG-LFv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="88" width="292" height="39"/>
+                                </variation>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrJ-Lk-wRe">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="86" width="292" height="66"/>
+                                    <rect key="frame" x="33" y="135" width="292" height="58"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -111,6 +120,7 @@
                                 <exclude reference="J87-Nb-eK4"/>
                                 <exclude reference="ocV-SW-DlF"/>
                                 <exclude reference="iOn-qF-F9o"/>
+                                <exclude reference="fvM-XG-LFv"/>
                                 <exclude reference="RrJ-Lk-wRe"/>
                             </mask>
                         </variation>
@@ -120,6 +130,7 @@
                                 <include reference="J87-Nb-eK4"/>
                                 <include reference="ocV-SW-DlF"/>
                                 <include reference="iOn-qF-F9o"/>
+                                <include reference="fvM-XG-LFv"/>
                                 <include reference="RrJ-Lk-wRe"/>
                             </mask>
                         </variation>
@@ -127,6 +138,7 @@
                     <connections>
                         <outlet property="wgButton_Mail" destination="iOn-qF-F9o" id="WE3-vX-s2i"/>
                         <outlet property="wgLabel_Message" destination="RrJ-Lk-wRe" id="Fi0-hi-8y7"/>
+                        <outlet property="wgLabel_Name" destination="fvM-XG-LFv" id="Bri-9B-YvE"/>
                         <outlet property="wgTextField_Enter_Message" destination="ocV-SW-DlF" id="knz-SU-MBk"/>
                         <outlet property="wgTextField_Enter_Name" destination="J87-Nb-eK4" id="WRQ-yi-AAR"/>
                     </connections>

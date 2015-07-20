@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var wgLabel_Name: UILabel!
     @IBOutlet weak var wgLabel_Message: UILabel!
     @IBOutlet weak var wgTextField_Enter_Name: UITextField!
     @IBOutlet weak var wgTextField_Enter_Message: UITextField!
@@ -27,6 +28,11 @@ class ViewController: UIViewController {
     
     @IBAction func wgButtonPressed_Send_Mail(sender: UIButton) {
         //Commenting to test commits
+        wgLabel_Name.hidden = false
+        wgLabel_Name.text = wgTextField_Enter_Name.text
+        wgLabel_Name.textColor = UIColor.blueColor()
+        wgTextField_Enter_Name.text = ""
+        
         wgLabel_Message.hidden = false
         wgLabel_Message.text = wgTextField_Enter_Message.text
         wgLabel_Message.textColor = UIColor.blueColor()
